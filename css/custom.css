@@ -1,20 +1,4 @@
-/* Static image */
-#intro.bg-image .container-fluid {
-  background-image: url('../img/unsplash/10.jpg');
-  background-size: cover;
-}
 
-/* Rain background */
-#intro.bg-rain .container-fluid {
-  background-image: url('../img/unsplash/8.jpg');
-  background-size: cover;
-}
-
-/* Snow background */
-#intro #snow {
-  background-image: url('../img/unsplash/9.jpg');
-  background-size: cover;
-}
 
 /* Static color */
 #intro.color .container-fluid {
@@ -33,6 +17,12 @@
   background-size: cover;
 }
 
+/* Services background */
+#services-2 .half.bg {
+  background-image: url('../img/networking-and-marketing.jpg');
+  background-size: cover;
+}
+
 /* Portfolio background */
 #portfolio .half.bg {
   background-image: url('../img/business-consulting-portfolio.jpg');
@@ -43,4 +33,47 @@
 #about .half.bg {
   background-image: url('../img/business-consult-at-your-service.jpg');
   background-size: cover;
+}
+
+/* Footer background */
+#footer .half.bg {
+  background-image: url('../img/cam-logo-1400x1240.jpg');
+  background-size: cover;
+}
+
+/* Slogan */
+#slogan{
+  display: none;
+}
+.slogan-div{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.slogan-img{
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 700px;
+}
+
+/* Footer */
+.list-inline>li>a{
+  font-size: 14px;
+  color: #0a8e9b;
+}
+.copyright{
+  font-size: 16px;
+}
+
+
+/* Social Media Icons */
+ul.share-buttons{
+  list-style: none;
+  padding: 10px 10px;
+}
+
+ul.share-buttons li{
+  display: inline;
+  padding-right: 10px;
 }
