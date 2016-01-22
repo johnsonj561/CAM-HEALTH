@@ -10,12 +10,12 @@ if(isset($_POST['submit'])){
   $headers = "From: www.camhealthpro.com\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-  $feedback = "<p class='text-center feedback'>Your message has been received. A CAM Health Agent will contact you shortly.</p>";
+  $feedback = "<p class='text-center feedback'>Your message has been received. A CAM Health agent will contact you shortly.</p>";
 
   $emailMessage = 
     "<table class='form-email-message'>
       <tr>
-        <td>CAM Health Message</td>
+        <td>New www.camhealthpro.com Message</td>
       </tr>
       <tr>
         <td>Subject: $subject</td>
@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
       </tr>
     </table>";
 
-  $result = mail("jjohnson@ambrosiatc.com", "CAM HEALTH", $emailMessage, $headers);
+  $result = mail("allyson@thelillypad.org", "CAM HEALTH Message", $emailMessage, $headers);
   
 
 }
@@ -46,7 +46,7 @@ if(isset($_POST['submit'])){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experienced business consulting team providing sound advice to entrepenaurs invested in the
+    <meta name="description" content="Experienced business consultants providing sound advice to entrepenaurs in the
                                       healthcare and medical industries">
     <meta name="author" content="CAM HEALTH, Palm Beach County">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
@@ -65,7 +65,7 @@ if(isset($_POST['submit'])){
     <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -262,20 +262,20 @@ if(isset($_POST['submit'])){
                 <h1 class="section-title">Contact</h1>
                 <h3 class="section-subtitle">For More Information</h3>                
               </div>
-              <form name="post" id="post" class="form" action="#">
+              <form method="post" class="form" action="#">
                 <div class="form-group">
-                  <input class="form-control" form="post" name="name" placeholder="Name" type="text" required/>
+                  <input class="form-control"  name="name" placeholder="Name" type="text" required/>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" form="post" id="email" name="email" placeholder="Email" type="text" required/>
+                  <input class="form-control"  id="email" name="email" placeholder="Email" type="text" required/>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" form="post" id="telephone" name="telephone" placeholder="Telephone" type="tel" required />
+                  <input class="form-control"  id="telephone" name="telephone" placeholder="Telephone" type="tel" required />
                 </div>
                 <div class="form-group">
-                  <input class="form-control" form="post" id="subject" name="subject" placeholder="Subject" type="text" required/>
+                  <input class="form-control"  id="subject" name="subject" placeholder="Subject" type="text" required/>
                 </div>
-                <textarea class="form-control" form="post" id="message" name="message" placeholder="Message" rows="6" required></textarea>
+                <textarea class="form-control"  id="message" name="message" placeholder="Message" rows="6" required></textarea>
                 <br />
                 <button class="btn btn-dark" name="submit" type="submit">Send message</button>
               </form>
@@ -311,7 +311,7 @@ if(isset($_POST['submit'])){
               </div>
               <ul class="list-inline">
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="index.php">Home</a>
                 </li>
                 <li class="footer-menu-divider">&sdot;</li>
                 <li>
